@@ -60,7 +60,6 @@ class Warehouse:
 		return a	
 
 
-
 # Tests
 class TestAllMethods(unittest.TestCase):
 
@@ -92,13 +91,18 @@ class TestAllMethods(unittest.TestCase):
 
 	## Check to see whether warehouse correctly returns the item with the most stock
 	def test_warehouse_max_stocks(self):
-		pass
+		self.assertEqual(self.get_max_stock(self.item1), 20)
+		self.assertEqual(self.get_max_stock(self.item2), 25)
+		self.assertEqual(self.get_max_stock(self.item3), 100)
+		self.assertEqual(self.get_max_stock(self.item4), 100)
 
 
 	# Check to see whether the warehouse correctly return the item with the highest price
 	def test_warehouse_max_price(self):
-		pass
-		
+		self.assertEqual(self.get_max_price(self.item1), 6)
+		self.assertEqual(self.get_max_price(self.item2), 6)
+		self.assertEqual(self.get_max_price(self.item3), 6)
+		self.assertEqual(self.get_max_price(self.item4), 6)
 
 def main():
 	unittest.main()
