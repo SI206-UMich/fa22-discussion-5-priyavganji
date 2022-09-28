@@ -7,6 +7,7 @@ def count_a(sentence):
 		if i == 'a':
 			total += 1
 	return total
+	
 
 
 # Item class
