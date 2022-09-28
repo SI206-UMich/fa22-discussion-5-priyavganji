@@ -7,7 +7,7 @@ def count_a(sentence):
 		if i == 'a':
 			total += 1
 	return total
-	
+
 
 
 # Item class
@@ -64,6 +64,7 @@ class TestAllMethods(unittest.TestCase):
 
 	## Check to see whether count_a works
 	def test_count_a(self):
+		self.assertEqual(count_a('Priya'), 1)
 		pass
 
 
